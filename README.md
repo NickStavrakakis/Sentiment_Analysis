@@ -6,7 +6,7 @@
 
 ### Collaborators
 
-* Mellios Thodoris-Marios <sdi1500093@di.uoa.gr>, University of Athens, Department of Informatics and Telecommunications, B.Sc. student
+* Mellios Thodoris - Marios <sdi1500093@di.uoa.gr>, University of Athens, Department of Informatics and Telecommunications, B.Sc. student
 * Stavrakakis Nikolaos <sdi1500149@di.uoa.gr>, University of Athens, Department of Informatics and Telecommunications, B.Sc. student
 
 ### Supervisors
