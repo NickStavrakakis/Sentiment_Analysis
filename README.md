@@ -2,7 +2,7 @@
 
 ## _Academic Year of 2018-2019_
 
-<i> Project Description will be added later </i>
+<i> - project description will be added later - </i>
 
 ### Collaborators
 
