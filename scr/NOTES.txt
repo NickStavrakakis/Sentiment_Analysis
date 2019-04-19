@@ -1,0 +1,12 @@
+- Install Anaconda (Python 2.7) (also to use Jupyter Notebook)
+
+- Install nltk package to use related functions (conda install -c anaconda nltk)
+
+- Run once in python
+	import nltk #
+	from nltk.corpus import stopwords
+	nltk.download('stopwords') #
+	from nltk.tokenize import word_tokenize
+	nltk.download('punkt') #
+	
+  and then remove the # lines
