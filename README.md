@@ -11,4 +11,4 @@
 
 ### Supervisors
 
-* Professor Gunopulos Dimitrios Roussou <dg@di.uoa.gr>, University of Athens
+* Professor Gunopulos Dimitrios <dg@di.uoa.gr>, University of Athens
