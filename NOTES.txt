@@ -10,5 +10,3 @@
 	nltk.download('punkt') #
 	
   and then remove the # lines
-
-- Install WordCloud (conda install -c conda-forge wordcloud)
