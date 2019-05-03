@@ -1,4 +1,4 @@
-- Install Anaconda (Python 2.7) (also to use Jupyter Notebook)
+- Install Anaconda (Python 3.7) (also to use Jupyter Notebook)
 
 - Install nltk package to use related functions (conda install -c anaconda nltk)
 
