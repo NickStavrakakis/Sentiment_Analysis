@@ -44,21 +44,46 @@ tweets = []
 pos_tweets = []
 neg_tweets = []
 neu_tweets = []
-i=0
-print("Clearing tweets...")
-with open('../twitter_data/train2017.tsv') as input_file:
-    reader = csv.reader(input_file, delimiter='\t')
-    for row in reader:
-        cleaned_tweet = cleaning(row[3])
-        tweets.append(cleaned_tweet)
-        if row[2] == "positive":
-            pos_tweets.append(cleaned_tweet)
-        elif row[2] == "negative":
-            neg_tweets.append(cleaned_tweet)
-        else: #if neutral
-            neu_tweets.append(cleaned_tweet)
-print("Done\n")
 
+answer = input("Do you want to use the cleaned tweets? y/n \n \t >")
+if answer == "n":
+    print("Clearing tweets...")
+    with open('../twitter_data/train2017.tsv') as input_file:
+        reader = csv.reader(input_file, delimiter='\t')
+        for row in reader:
+            cleaned_tweet = cleaning(row[3])
+            tweets.append(cleaned_tweet)
+            if row[2] == "positive":
+                pos_tweets.append(cleaned_tweet)
+            elif row[2] == "negative":
+                neg_tweets.append(cleaned_tweet)
+            else: #if neutral
+                neu_tweets.append(cleaned_tweet)
+    print("Done\n")
+    
+    print("Saving cleared tweets...")
+    i=0
+    with open('../twitter_data/train2017.tsv') as input_file, open('../twitter_data/train2017_cleaned.tsv', 'w') as output_file:
+        reader = csv.reader(input_file, delimiter='\t')
+        for row in reader:
+            output_file.write(row[0] + '\t' + row[1] + '\t' + row[2] + '\t' + tweets[i] + '\n')
+            i = i+1
+    print("Done\n")
+else: #yes
+    print("Getting cleaned tweets...")
+    with open('../twitter_data/train2017_cleaned.tsv') as input_file:
+        reader = csv.reader(input_file, delimiter='\t')
+        for row in reader:
+            tweets.append(row[3])
+            if row[2] == "positive":
+                pos_tweets.append(row[3])
+            elif row[2] == "negative":
+                neg_tweets.append(row[3])
+            else: #if neutral
+                neu_tweets.append(row[3])
+    print("Done\n")
+
+    
 print("Generating WordClouds...")
 generate_wc((" ").join(tweets), "tweets_wordcloud")
 generate_wc((" ").join(pos_tweets), "pos_tweets_wordcloud")
