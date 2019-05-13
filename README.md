@@ -2,13 +2,9 @@
 
 ## _Academic Year of 2018-2019_
 
-<i> - project description will be added later - </i>
-
-### Collaborators
-
-* Mellios Thodoris - Marios <sdi1500093@di.uoa.gr>, University of Athens, Department of Informatics and Telecommunications, B.Sc. student
-* Stavrakakis Nikolaos <sdi1500149@di.uoa.gr>, University of Athens, Department of Informatics and Telecommunications, B.Sc. student
+Sentiment Analysis on tweets, extracting some interesting information creating Wordclouds and Graphs. Also, collected and calculated the futures for the given tweets with the Bag-of-words and the Tf-idf methods to train our SVM and KNN learning models and predict the sentiment value for a sample of test tweets.
 
 ### Supervisors
 
 * Professor Gunopulos Dimitrios <dg@di.uoa.gr>, University of Athens
+* Professor Assistant Kolovou Athanasia <akolovou@di.uoa.gr>, University of Athens
